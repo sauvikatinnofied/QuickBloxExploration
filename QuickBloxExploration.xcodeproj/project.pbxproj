@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0869DFBDA4EC17296BF1BFB5 /* Pods_QuickBloxExploration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21595DBAF1157509106CD89A /* Pods_QuickBloxExploration.framework */; };
 		454B938E1F2F444B00791FA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454B938D1F2F444B00791FA1 /* AppDelegate.swift */; };
 		454B93901F2F444B00791FA1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454B938F1F2F444B00791FA1 /* ViewController.swift */; };
 		454B93931F2F444B00791FA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 454B93911F2F444B00791FA1 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21595DBAF1157509106CD89A /* Pods_QuickBloxExploration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickBloxExploration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		454B938A1F2F444B00791FA1 /* QuickBloxExploration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickBloxExploration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		454B938D1F2F444B00791FA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		454B938F1F2F444B00791FA1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,9 @@
 		454B93941F2F444B00791FA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		454B93971F2F444B00791FA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		454B93991F2F444B00791FA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		454B93A11F2F460C00791FA1 /* QuickBloxExploration-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QuickBloxExploration-Bridging-Header.h"; sourceTree = "<group>"; };
+		C7DBF0652B0C654E1479F89A /* Pods-QuickBloxExploration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickBloxExploration.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickBloxExploration/Pods-QuickBloxExploration.release.xcconfig"; sourceTree = "<group>"; };
+		FBF17183CC7BB0E142560CEE /* Pods-QuickBloxExploration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickBloxExploration.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickBloxExploration/Pods-QuickBloxExploration.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +34,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0869DFBDA4EC17296BF1BFB5 /* Pods_QuickBloxExploration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38ECA35C0D0370E38B3D3576 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FBF17183CC7BB0E142560CEE /* Pods-QuickBloxExploration.debug.xcconfig */,
+				C7DBF0652B0C654E1479F89A /* Pods-QuickBloxExploration.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		454B93811F2F444A00791FA1 = {
 			isa = PBXGroup;
 			children = (
 				454B938C1F2F444B00791FA1 /* QuickBloxExploration */,
 				454B938B1F2F444B00791FA1 /* Products */,
+				38ECA35C0D0370E38B3D3576 /* Pods */,
+				78C108D19A4D9133FA35ABDD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +77,17 @@
 				454B93941F2F444B00791FA1 /* Assets.xcassets */,
 				454B93961F2F444B00791FA1 /* LaunchScreen.storyboard */,
 				454B93991F2F444B00791FA1 /* Info.plist */,
+				454B93A11F2F460C00791FA1 /* QuickBloxExploration-Bridging-Header.h */,
 			);
 			path = QuickBloxExploration;
+			sourceTree = "<group>";
+		};
+		78C108D19A4D9133FA35ABDD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21595DBAF1157509106CD89A /* Pods_QuickBloxExploration.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +97,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 454B939C1F2F444B00791FA1 /* Build configuration list for PBXNativeTarget "QuickBloxExploration" */;
 			buildPhases = (
+				C458347EFE39EA598AEFD0A8 /* [CP] Check Pods Manifest.lock */,
 				454B93861F2F444B00791FA1 /* Sources */,
 				454B93871F2F444B00791FA1 /* Frameworks */,
 				454B93881F2F444B00791FA1 /* Resources */,
+				E7F547A10132D3359C61EBA2 /* [CP] Embed Pods Frameworks */,
+				B1034C8F550A6407B193990C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -97,6 +126,7 @@
 					454B93891F2F444B00791FA1 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 9STZT28MB5;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +161,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B1034C8F550A6407B193990C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickBloxExploration/Pods-QuickBloxExploration-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C458347EFE39EA598AEFD0A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E7F547A10132D3359C61EBA2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickBloxExploration/Pods-QuickBloxExploration-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		454B93861F2F444B00791FA1 /* Sources */ = {
@@ -261,26 +339,41 @@
 		};
 		454B939D1F2F444B00791FA1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBF17183CC7BB0E142560CEE /* Pods-QuickBloxExploration.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 9STZT28MB5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QuickBloxExploration",
+				);
 				INFOPLIST_FILE = QuickBloxExploration/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.innofied.QuickBloxExploration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "QuickBloxExploration/QuickBloxExploration-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		454B939E1F2F444B00791FA1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7DBF0652B0C654E1479F89A /* Pods-QuickBloxExploration.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 9STZT28MB5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QuickBloxExploration",
+				);
 				INFOPLIST_FILE = QuickBloxExploration/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.innofied.QuickBloxExploration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "QuickBloxExploration/QuickBloxExploration-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -304,6 +397,7 @@
 				454B939E1F2F444B00791FA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
